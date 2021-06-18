@@ -2,11 +2,11 @@
 Implementation of External Sorting In C++
 
 # Build
-  `$ make`
+  $ make
  
 # Usage
-  `$ ./main {intput-file} {output-file} {RAM-size (Bytes)}`
+  $ ./main {intput-file} {output-file} {RAM-size (Bytes)}
   
 # Example
-  `$ make`
-  `$ ./main input.txt output.txt 4000000000`
+  $ make
+  $ ./main input.txt output.txt 4000000000
