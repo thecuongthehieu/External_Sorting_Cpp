@@ -8,5 +8,5 @@ Implementation of External Sorting In C++
   `$ ./main {intput-file} {output-file} {RAM-size (Bytes)}`
   
 # Example
-  `$ make`
+  `$ make` <br />
   `$ ./main input.txt output.txt 4000000000`
