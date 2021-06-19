@@ -32,7 +32,7 @@ struct HeapNode {
  * Customized heap node greater function to create Min Heap 
  * using STL priority queue data structure
  */
-struct heapNodeGreater : public binary_function<HeapNode*, HeapNode*, bool> {
+struct HeapNodeGreater : public binary_function<HeapNode*, HeapNode*, bool> {
     bool operator() (HeapNode node1, HeapNode node2) const {
         return (node1.line.compare(node2.line)) > 0;
     }
@@ -112,7 +112,7 @@ int createSortedRuns(const string &inputFilePath, const uint64_t &maxBufferSize)
  */
 void mergeFiles(const uint64_t &numSortedRuns, const string &outputFilePath) {
     vector<ifstream> sortedRunFiles(numSortedRuns + 1);
-    priority_queue<HeapNode, vector<HeapNode>, heapNodeGreater> minHeap;
+    priority_queue<HeapNode, vector<HeapNode>, HeapNodeGreater> minHeap;
     ofstream outFile(outputFilePath);
 
     for (int i = 1; i <= numSortedRuns; ++i) {
